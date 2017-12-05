@@ -38,7 +38,7 @@ class Design():
         entryTargetW = Entry(self.Widget, width=10, font=self.fontSize)  
         entryTargetW.grid(row=self.rowindex, column=2)  
         self.entryTargetW = entryTargetW
-        lblTargetH = Label(self.Widget, text=self.conf.get("TargetDeviceName", "width", "高度（px）"), font=self.fontSize)  
+        lblTargetH = Label(self.Widget, text=self.conf.get("TargetDeviceName", "height", "高度（px）"), font=self.fontSize)  
         lblTargetH.grid(row= self.rowindex, column=3)   
         entryTargetH = Entry(self.Widget, width=10, font=self.fontSize)  
         entryTargetH.grid(row = self.rowindex, column=4)     
