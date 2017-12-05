@@ -10,8 +10,12 @@ pyinstaller生成的exe文件
 Windows：
 https://github.com/chenshi011/AndroidDimensConvertTool/blob/master/dist/DimensConvertForm.exe
 
+![](screenshot1.png)
+![](screenshot2.png)
+
 Linux:
 https://github.com/chenshi011/AndroidDimensConvertTool/blob/master/dist/DimensConvertForm
 
-![](screenshot1.png)
-![](screenshot2.png)
+![](screenshot1_Linux.png)
+![](screenshot2_Linux.png)
+
