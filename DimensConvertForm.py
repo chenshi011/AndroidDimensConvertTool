@@ -18,8 +18,13 @@ class Form:
     def __init__(self):  
         self.window = Tk()                
         self.window.title("Dimens Convert Tool")  
-        self.window.minsize(450, 355)  
-        self.center_wind(self.window, 450, 355)
+        windowW = 420  
+        if(platform.system() =="Windows"):
+            windowW = 420  
+        else:
+            windowW = 480      
+        self.window.minsize(windowW, 355)  
+        self.center_wind(self.window, windowW, 355)
         frame = Frame(self.window)
         frame.pack()    
         config_path = os.path.split(os.path.realpath(__file__))[0] + "/" + "configs.ini"
