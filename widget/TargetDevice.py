@@ -79,7 +79,7 @@ class Design():
             self.addDevice(758, 1024)
             self.addDevice(600, 800)        
     def addDevice(self, width, height):
-		item = {"width":width, "height":height}
+	item = {"width":width, "height":height}
         item_lb = self.getDictKey(width, height)
         self.devices[item_lb] = item
         self.entryTargetW.delete(0, END)
@@ -110,7 +110,7 @@ class Design():
         print self.devices.get(item_lb, -1)
         return self.devices.get(item_lb, -1)   
     def getDictKey(self, width, height):
-        return "%sx%s" % (height, width) 
+        return "%sx%s" % (str(height), str(width)) 
     def processAdd(self):  
         width = int(self.entryTargetW.get())
         height = int(self.entryTargetH.get())
