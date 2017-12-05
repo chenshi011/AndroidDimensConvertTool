@@ -79,11 +79,7 @@ class Design():
             self.addDevice(758, 1024)
             self.addDevice(600, 800)        
     def addDevice(self, width, height):
-        thread = threading.Thread(target= self.addDeviceThread, args=(width, height,))
-        thread.start()
-        thread.join()
-    def addDeviceThread(self, width, height):
-        item = {"width":width, "height":height}
+		item = {"width":width, "height":height}
         item_lb = self.getDictKey(width, height)
         self.devices[item_lb] = item
         self.entryTargetW.delete(0, END)
@@ -93,6 +89,10 @@ class Design():
         self.TargetW = width
         self.TargetH = height
         self.lb.insert(END, item_lb)
+        thread = threading.Thread(target= self.addDeviceThread, args=(width, height,))
+        thread.start()
+        thread.join()
+    def addDeviceThread(self, width, height):
         if not self.doc:
             self.doc = Document()
             self.devicesDoc = self.doc.createElement('devices') 
