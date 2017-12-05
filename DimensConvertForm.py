@@ -23,7 +23,7 @@ class Form:
         if(platform.system() =="Windows"):
             windowW = 420  
         else:
-            windowW = 480      
+            windowW = 490      
         self.window.minsize(windowW, 355)  
         self.center_wind(self.window, windowW, 355)
         frame = Frame(self.window)
