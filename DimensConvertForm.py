@@ -5,6 +5,7 @@
 '''
 from Tkinter import Tk, Frame, Button, Label, Entry, Menu
 import os
+import platform
 import threading
 import tkFileDialog
 import tkMessageBox
